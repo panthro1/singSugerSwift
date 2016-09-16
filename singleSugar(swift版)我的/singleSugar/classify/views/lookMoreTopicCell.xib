@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="lookMoreTopicCell" rowHeight="160" id="H37-jr-bOQ" customClass="lookMoreTopicCell" customModule="singleSugar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H37-jr-bOQ" id="AHY-tL-qox">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0K-GZ-hV6">
+                        <rect key="frame" x="144" y="67" width="31" height="26"/>
+                        <state key="normal" image="PlaceHolderImage_small_31x26_"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LCV-Qt-cth">
+                        <rect key="frame" x="8" y="8" width="304" height="143"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TJ-co-70s">
+                        <rect key="frame" x="8" y="77" width="304" height="5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQf-MP-Qje">
+                                <rect key="frame" x="30" y="2" width="109" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="9p2-L3-zeR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5v-XX-UFT">
+                                <rect key="frame" x="164" y="2" width="110" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="aq7-Wh-qVB"/>
+                                    <constraint firstAttribute="height" constant="1" id="rOA-Rf-tGQ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aq7-Wh-qVB"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="see_topic_all_circle" translatesAutoresizingMaskIntoConstraints="NO" id="Daa-DX-36P">
+                                <rect key="frame" x="149" y="0.0" width="5" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="Qby-7h-64h"/>
+                                    <constraint firstAttribute="height" constant="5" id="mfV-nH-ddv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d5v-XX-UFT" firstAttribute="centerY" secondItem="0TJ-co-70s" secondAttribute="centerY" id="7Iw-03-V3j"/>
+                            <constraint firstItem="BQf-MP-Qje" firstAttribute="leading" secondItem="0TJ-co-70s" secondAttribute="leading" constant="30" id="8p9-pw-DL3"/>
+                            <constraint firstAttribute="trailing" secondItem="d5v-XX-UFT" secondAttribute="trailing" constant="30" id="I5C-CM-JLX"/>
+                            <constraint firstAttribute="height" constant="5" id="Vi4-Fk-oB7"/>
+                            <constraint firstItem="Daa-DX-36P" firstAttribute="centerX" secondItem="0TJ-co-70s" secondAttribute="centerX" id="XF6-Ti-4sx"/>
+                            <constraint firstItem="d5v-XX-UFT" firstAttribute="leading" secondItem="Daa-DX-36P" secondAttribute="trailing" constant="10" id="jkI-od-uIv"/>
+                            <constraint firstItem="Daa-DX-36P" firstAttribute="leading" secondItem="BQf-MP-Qje" secondAttribute="trailing" constant="10" id="koW-Th-Qfb"/>
+                            <constraint firstItem="BQf-MP-Qje" firstAttribute="centerY" secondItem="0TJ-co-70s" secondAttribute="centerY" id="me3-5j-wVg"/>
+                            <constraint firstItem="Daa-DX-36P" firstAttribute="centerY" secondItem="0TJ-co-70s" secondAttribute="centerY" id="pUZ-CC-ZXx"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFX-om-bHh">
+                        <rect key="frame" x="135" y="43" width="49" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAh-Nh-xBz">
+                        <rect key="frame" x="139" y="93" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="V0K-GZ-hV6" firstAttribute="top" secondItem="vFX-om-bHh" secondAttribute="bottom" id="1ZJ-xa-w0M"/>
+                    <constraint firstItem="V0K-GZ-hV6" firstAttribute="centerY" secondItem="AHY-tL-qox" secondAttribute="centerY" id="4LQ-jo-0lZ"/>
+                    <constraint firstItem="PAh-Nh-xBz" firstAttribute="top" secondItem="V0K-GZ-hV6" secondAttribute="bottom" id="52Q-ME-OrK"/>
+                    <constraint firstItem="PAh-Nh-xBz" firstAttribute="centerX" secondItem="AHY-tL-qox" secondAttribute="centerX" id="F42-AD-Tap"/>
+                    <constraint firstItem="0TJ-co-70s" firstAttribute="leading" secondItem="AHY-tL-qox" secondAttribute="leadingMargin" id="GD5-p5-MHA"/>
+                    <constraint firstItem="LCV-Qt-cth" firstAttribute="leading" secondItem="AHY-tL-qox" secondAttribute="leadingMargin" id="JcL-M3-gs3"/>
+                    <constraint firstItem="LCV-Qt-cth" firstAttribute="top" secondItem="AHY-tL-qox" secondAttribute="topMargin" id="MW9-BQ-5jp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="LCV-Qt-cth" secondAttribute="trailing" id="PBg-Ed-57Z"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0TJ-co-70s" secondAttribute="trailing" id="but-kd-hRg"/>
+                    <constraint firstItem="vFX-om-bHh" firstAttribute="centerX" secondItem="AHY-tL-qox" secondAttribute="centerX" id="c9s-62-skx"/>
+                    <constraint firstItem="0TJ-co-70s" firstAttribute="centerY" secondItem="AHY-tL-qox" secondAttribute="centerY" id="eFJ-f5-spx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="LCV-Qt-cth" secondAttribute="bottom" id="w7n-ql-370"/>
+                    <constraint firstItem="V0K-GZ-hV6" firstAttribute="centerX" secondItem="AHY-tL-qox" secondAttribute="centerX" id="xmI-T4-Hmc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="LCV-Qt-cth" id="raD-k4-Z2B"/>
+                <outlet property="placeholderButton" destination="V0K-GZ-hV6" id="QRI-J8-0Rm"/>
+                <outlet property="subtitleLabel" destination="PAh-Nh-xBz" id="7ij-Ko-RfB"/>
+                <outlet property="titleLabel" destination="vFX-om-bHh" id="huW-rf-Ybj"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PlaceHolderImage_small_31x26_" width="31" height="26"/>
+        <image name="see_topic_all_circle" width="31" height="26"/>
+    </resources>
+</document>

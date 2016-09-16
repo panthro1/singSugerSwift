@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailviewController" customModule="singleSugar" customModuleProvider="target">
+            <connections>
+                <outlet property="scrollView" destination="ZG9-1P-eg9" id="bhM-Y5-r1u"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZxW-gO-Zu1">
+                    <rect key="frame" x="0.0" y="560" width="600" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STx-qV-ivG">
+                            <rect key="frame" x="140" y="5" width="443" height="30"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="f8O-Tb-LY5"/>
+                            </constraints>
+                            <state key="normal" title="去天猫购买"/>
+                            <connections>
+                                <action selector="gotoTimall:" destination="-1" eventType="touchUpInside" id="5tu-8O-ymK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6m-NH-hpX">
+                            <rect key="frame" x="20" y="11" width="100" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="LfM-c3-4e5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                            <state key="normal" title="喜欢" image="content-details_like_16x16_"/>
+                            <connections>
+                                <action selector="lickbtnClick:" destination="-1" eventType="touchUpInside" id="IJg-BF-sma"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="R6m-NH-hpX" firstAttribute="centerY" secondItem="ZxW-gO-Zu1" secondAttribute="centerY" id="4hY-vZ-Aey"/>
+                        <constraint firstItem="STx-qV-ivG" firstAttribute="leading" secondItem="R6m-NH-hpX" secondAttribute="trailing" constant="20" id="DS1-Gm-Egr"/>
+                        <constraint firstAttribute="height" constant="40" id="UnX-8Z-cDn"/>
+                        <constraint firstItem="R6m-NH-hpX" firstAttribute="leading" secondItem="ZxW-gO-Zu1" secondAttribute="leading" constant="20" id="Yxo-5u-twn"/>
+                        <constraint firstItem="STx-qV-ivG" firstAttribute="centerY" secondItem="ZxW-gO-Zu1" secondAttribute="centerY" id="bwS-0C-knu"/>
+                        <constraint firstAttribute="trailing" secondItem="STx-qV-ivG" secondAttribute="trailing" constant="17" id="r50-fF-fmO"/>
+                        <constraint firstItem="STx-qV-ivG" firstAttribute="leading" secondItem="R6m-NH-hpX" secondAttribute="trailing" constant="20" id="wPw-qQ-xzE"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZG9-1P-eg9">
+                    <rect key="frame" x="0.0" y="64" width="600" height="496"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZxW-gO-Zu1" firstAttribute="top" secondItem="ZG9-1P-eg9" secondAttribute="bottom" id="8kA-aV-HEs"/>
+                <constraint firstItem="ZxW-gO-Zu1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KIZ-xc-7az"/>
+                <constraint firstAttribute="trailing" secondItem="ZxW-gO-Zu1" secondAttribute="trailing" id="b8Q-fK-xBR"/>
+                <constraint firstItem="ZG9-1P-eg9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bnu-bS-6lx"/>
+                <constraint firstItem="ZG9-1P-eg9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="lrQ-Ss-xct"/>
+                <constraint firstAttribute="trailing" secondItem="ZG9-1P-eg9" secondAttribute="trailing" id="nEK-OB-a3j"/>
+                <constraint firstAttribute="bottom" secondItem="ZxW-gO-Zu1" secondAttribute="bottom" id="pVB-1A-Jrj"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="content-details_like_16x16_" width="16" height="16"/>
+    </resources>
+</document>
